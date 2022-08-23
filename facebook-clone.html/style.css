@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    ;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    position: relative;
+    height: 125vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 18vw;
+    top: 30vh;
+    margin-right: 20vw;
+}
+
+.main img {
+    height: 148px;
+    width: 300px;
+    margin: -30px;
+}
+
+.head {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 300px;
+    display: flex;
+    width: 373px;
+
+}
+
+.log-in {
+    position: relative;
+    background-color: #f7fcfe;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    bottom: 5vh;
+    width: 420px;
+    border-radius: 12px;
+    margin-left: 58vw;
+    justify-content: flex-start;
+    padding: 10px 10px 20px 10px;
+    align-items: center;
+    box-shadow: 0 5px 5px 3px gainsboro;
+}
+
+.log-in a {
+    margin: 18px 0;
+    text-decoration: none;
+    font-size: 17px;
+    color: #1877f2;
+}
+
+.log-in a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.log-in input[type=email],
+.log-in input[type=password] {
+    height: 30%;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+    width: 95%;
+    border: 1.5px solid #EEEFF0;
+}
+
+.log-in input[type=email]:focus,
+.log-in input[type=password]:focus {
+    outline: none;
+    border: 1px solid;
+    box-shadow: blue;
+    caret-color: blue;
+}
+
+#log-in-button {
+    background-color: #1877f2;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    height: 80px;
+    font-weight: bold;
+    width: 95%;
+}
+
+#log-in-button {
+    background-color: #166FE5;
+    cursor: pointer;
+}
+
+#new {
+    background-color: #42b72a;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    height: 60px;
+    font-weight: bold;
+    width: 60%;
+    margin-top: 10px;
+}
+
+#new:hover {
+    background-color: #36a420;
+    cursor: pointer;
+}
+
+p {
+    font-size: 15px;
+    position: absolute;
+    bottom: -55px;
+}
+
+footer {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px;
+    color: #a6a8aa;
+    font-size: 12px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    list-style: 20px;
+}
+
+@media screen and (max-width:1110px) {
+    main {
+        left: 40px;
+        margin-right: 20vw;
+    }
+
+    .log-in {
+        margin-right: 30px;
+    }
+}
+
+@media screen and(max-width:1062px) {
+    body {
+        height: 150vh;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        top: 20px;
+        position: absolute;
+    }
+
+
+    .log-in {
+        text-align: center;
+        left: 0;
+        margin-right: 0;
+        margin-top: -30px;
+        top: 80px;
+    }
+
+    footer {
+        position: absolute;
+        padding: 20px;
+        width: 100vw;
+    }
+}
